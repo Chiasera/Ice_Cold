@@ -1,0 +1,7 @@
+spine.png
+size:1888,907
+filter:Linear,Linear
+pma:true
+Paint Layer 1
+bounds:2,2,1884,903
+offsets:0,6,1934,909

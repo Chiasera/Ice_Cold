@@ -1,0 +1,6 @@
+spine.png
+size:5042,1018
+filter:Linear,Linear
+pma:true
+HerbsRocks
+bounds:2,2,5038,1014

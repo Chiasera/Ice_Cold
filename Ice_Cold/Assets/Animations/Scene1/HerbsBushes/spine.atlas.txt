@@ -1,0 +1,6 @@
+spine.png
+size:1900,657
+filter:Linear,Linear
+pma:true
+HerbsBushs
+bounds:2,2,1896,653

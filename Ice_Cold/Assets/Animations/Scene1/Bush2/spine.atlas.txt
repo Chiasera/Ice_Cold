@@ -1,0 +1,7 @@
+spine.png
+size:1073,445
+filter:Linear,Linear
+pma:true
+Bush2
+bounds:2,2,1069,441
+offsets:0,56,1069,506
