@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     SkeletonAnimation skeletonAnimation;
     float deltaButtonPressed;
     private string keyIndicator;
+    private bool hasHitWall;
 
     // Start is called before the first frame update
     void Start()
@@ -96,7 +97,7 @@ public class PlayerController : MonoBehaviour
             skeletonAnimation.AnimationName = "Running";
             skeletonAnimation.loop = true;
         } 
-        else if(inputX == 0)
+        else if(inputX == 0 || hasHitWall)
         {
             skeletonAnimation.AnimationName = "Idle";
             skeletonAnimation.loop = true;
@@ -226,5 +227,10 @@ public class PlayerController : MonoBehaviour
     public void setGroundState(bool groundState)
     {
         isGrounded = groundState;
+    }
+
+    public void setColliderState(bool hitWall)
+    {
+        hasHitWall = hitWall;
     }
 }
