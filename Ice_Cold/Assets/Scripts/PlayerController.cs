@@ -21,10 +21,14 @@ public class PlayerController : MonoBehaviour
     float deltaButtonPressed;
     private string keyIndicator;
     private bool hasHitWall;
+    private SkeletonRendererCustomMaterials materialRenderer;
+    public Material[] materials;
 
     // Start is called before the first frame update
     void Start()
     {
+
+        materialRenderer = GameObject.Find("BushWhiteFlowers_Outline").GetComponent<SkeletonRendererCustomMaterials>();
         speed = 7;
         skeletonAnimation = GameObject.Find("PlayerSkeleton").GetComponent<SkeletonAnimation>();
         rigidBody = GetComponent<Rigidbody2D>();
@@ -33,11 +37,15 @@ public class PlayerController : MonoBehaviour
         isFacingRight = true;
         keyIndicator = "";
 
+        //skeletonAnimation.CustomMaterialOverride.Add(materials[0], materials[1]);
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        
         /*================================================
 
          GETTING INPUTS FROM THE DIFFERENT AXIS
@@ -86,6 +94,8 @@ public class PlayerController : MonoBehaviour
          ANIMATOR
 
         ================================================*/
+
+
 
         if (inputX != 0 && !isJumping && !isSprinting)
         {

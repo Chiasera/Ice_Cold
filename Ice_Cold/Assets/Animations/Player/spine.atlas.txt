@@ -1,7 +1,6 @@
 spine.png
 size:2400,132
 filter:Linear,Linear
-pma:true
 DashDownCharge1
 bounds:2,2,128,128
 DashDownCharge2
